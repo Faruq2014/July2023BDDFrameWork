@@ -1,0 +1,51 @@
+crate maven repo
+in pom.xml file:
+  update java properties
+  add dependencies
+	  1. selenium-java
+	  2. cucumber-java
+	  3.cucumber-junit
+	  4. junit
+	  5. webdrivermanager
+	  
+ add cucumber plug-in
+ add Features folder in the src/test/resources--such as Features
+    build feature--Login.feature
+    run the feature file and copy the methods
+    (in case feature file does not run properly--then 
+    fix run configuration)
+   Add step defination package such as com.facebook.stepDefinations
+      develop a test class--such LoginTest
+      paste all the method--clean up the code--import given,when, and then
+   add a runner package such as com.facebook.stepRunner
+      develop a class such as FacebookRunner
+      put all this line properly 
+      @RunWith(Cucumber.class)
+				@CucumberOptions(
+						plugin= {"pretty",
+								"html:target/CucumberReport.html",
+								"json:target/cucumber-report.json",
+								"junit:target/cucumber-report.xml"
+								},
+						snippets=SnippetType.CAMELCASE,		
+						features="src/test/resources/Features",
+								tags="@login",
+						//glue= {"stepDefinations"},
+								glue="com.facebook.stepDefinations",
+						//dryRun=false,
+						monochrome = true
+						
+						
+						)
+
+	from FacebookRunner run as juit test
+	  refresh the project--then in the target folder you will see
+	  CucumberReport.htm file
+	  open this file with system editor--you will see pretty report					
+						
+						
+						
+						
+						
+						
+						
