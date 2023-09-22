@@ -15,7 +15,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 				},
 		snippets=SnippetType.CAMELCASE,		
 		features="src/test/resources/Features",
-				tags="@login",
+				tags="@dataDriven",
 		//glue= {"stepDefinations"},
 				glue="com.facebook.stepDefinations",
 		//dryRun=false,
