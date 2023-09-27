@@ -13,9 +13,10 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 				"json:target/cucumber-report.json",
 				"junit:target/cucumber-report.xml"
 				},
-		snippets=SnippetType.CAMELCASE,		
+		snippets=SnippetType.CAMELCASE,	
+				//snippets=SnippetType.UNDERSCORE,
 		features="src/test/resources/Features",
-				tags="@dataDriven",
+				tags="@first",
 		//glue= {"stepDefinations"},
 				glue="com.facebook.stepDefinations",
 		//dryRun=false,
