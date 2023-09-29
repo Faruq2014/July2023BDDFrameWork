@@ -20,7 +20,7 @@ Feature: Registration test
 
     Examples: 
       | enterFirstName | enterLastName | enterEmail     | EnterYourPassword | enterYourBirthMonth | enterYourBirthDay | enterYourBirthYear | enterGender |
-      | "Moumita"      | "Shen"        | "ms@ymail.com" | "shem$123"        | "11"                | "22"              | "2002"             | "female"         |
+      | "Moumita"      | "Shen"        | "ms@ymail.com" | "shem$123"        | "Mar"                | "22"              | "2002"             | "female"         |
 
 
   Scenario Outline: As a tester I open facebook registration page

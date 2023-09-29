@@ -37,15 +37,15 @@ public class RegistrationTest extends BaseTest{
 	}
 	@When("tester input birth month {string}")
 	public void testerInputBirthMonth(String enterYourBirthMonth) {
-		//registrationPage.monthDropDownField(enterYourBirthMonth);
+		registrationPage.monthDropDownField(enterYourBirthMonth);
 	}
 	@When("tester input birth day {string}")
 	public void testerInputBirthDay(String enterYourBirthDay) {
-		//registrationPage.dayDropDownField(enterYourBirthDay);
+		registrationPage.dayDropDownField(enterYourBirthDay);
 	}
 	@When("tester input birth year {string}")
 	public void testerInputBirthYear(String enterYourBirthYear) {
-		//registrationPage.yearDropDownField(enterYourBirthYear); 
+		registrationPage.yearDropDownField(enterYourBirthYear); 
 	}
 	@When("tester input gender {string}")
 	public void testerInputGender(String enterGender) {

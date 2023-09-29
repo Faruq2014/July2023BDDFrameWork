@@ -1,5 +1,6 @@
 package com.facebook.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -55,7 +56,7 @@ public class RegistrationPage {
 	}
 	
 	@FindBy(how=How.ID, using="month") private WebElement bitrthMonth;
-	public WebElement monthDropDownField(String enterYourBirthMonth) {
+	public WebElement monthDropDownField(String enterYourBirthMonth) {		
 		Select select = new Select(bitrthMonth);
 		select.selectByVisibleText(enterYourBirthMonth);
 		return bitrthMonth;
