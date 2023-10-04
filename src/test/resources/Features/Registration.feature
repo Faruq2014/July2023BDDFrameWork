@@ -1,4 +1,4 @@
-@registration
+@registration @regression
 Feature: Registration test
 @first
   Scenario Outline: As a tester I open facebook registration page

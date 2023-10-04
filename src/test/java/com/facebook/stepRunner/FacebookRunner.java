@@ -16,7 +16,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		snippets=SnippetType.CAMELCASE,	
 				//snippets=SnippetType.UNDERSCORE,
 		features="src/test/resources/Features",
-				tags="@first",
+				tags="@regression",
 		//glue= {"stepDefinations"},
 				glue="com.facebook.stepDefinations",
 		//dryRun=false,

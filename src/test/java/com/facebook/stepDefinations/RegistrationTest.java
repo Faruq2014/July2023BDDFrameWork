@@ -54,6 +54,7 @@ public class RegistrationTest extends BaseTest{
 	@When("tester click login button")
 	public void testerClickLoginButton() {
 		registrationPage.signupButton();
+		screenShot("Registration");
 	}
 	@Then("tester should landing on user page")
 	public void testerShouldLandingOnUserPage() {

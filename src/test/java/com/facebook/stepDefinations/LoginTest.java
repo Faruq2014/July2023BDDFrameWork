@@ -1,5 +1,8 @@
 package com.facebook.stepDefinations;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 import com.facebook.base.BaseTest;
 import com.facebook.pages.LoginPage;
 
@@ -22,12 +25,15 @@ public class LoginTest extends BaseTest{
 		loginPage = new LoginPage(driver);
 		loginPage.userName("Ayon");
 		loginPage.enterPassword("aoyeerr");
+		WebElement userName=driver.findElement(By.id("email"));
+		webElementScreenShot(userName,"user");
 	}
 
 	@Then("user succesfully logged in")
 	public void user_succesfully_logged_in() {
 		System.out.println("hello then"); 
 		loginPage.clickLoginButton();
+		screenShot("LoginTest");
 		closeApp();
 	}
 
