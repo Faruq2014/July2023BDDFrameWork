@@ -1,0 +1,11 @@
+how do you take screen shot in selenium
+can you explain a wraper method
+=TakesScreenshot screenShot = ((TakesScreenshot) driver);
+can you take screen shot of URL
+what driver represent in the screen shot=url
+how do you take screen shot of an element
+where do you save the screen shot
+how do you create folder in java
+=File destinationFile = new File(destinationPath);
+how do you copy and paste in java
+=FileUtils.copyFile(src, destinationFile);
