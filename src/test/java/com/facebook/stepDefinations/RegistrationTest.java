@@ -2,17 +2,16 @@ package com.facebook.stepDefinations;
 
 import com.facebook.base.BaseTest;
 import com.facebook.pages.RegistrationPage;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class RegistrationTest extends BaseTest{
 	RegistrationPage registrationPage;
-
 	@Given("tester open facebook home page")
 	public void testerOpenFacebookHomePage() {
 		openApp();
+		
 	}
 	@Given("tester click on registration button")
 	public void testerClickOnRegistrationButton() {
@@ -54,11 +53,15 @@ public class RegistrationTest extends BaseTest{
 	@When("tester click login button")
 	public void testerClickLoginButton() {
 		registrationPage.signupButton();
-		screenShot("Registration");
+		
+	}
+	@Then("Tester landing on wrong page")
+	public void testerLandingOnWrongPage() {
+	    System.out.println("not build yet!");
 	}
 	@Then("tester should landing on user page")
 	public void testerShouldLandingOnUserPage() {
-	    
+	    closeApp();
 	}
 
 

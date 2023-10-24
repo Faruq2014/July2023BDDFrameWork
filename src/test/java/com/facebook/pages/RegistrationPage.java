@@ -104,4 +104,6 @@ public class RegistrationPage {
 	public void reEnterEmail(String reEnter) {
 		reEnteremail.sendKeys(reEnter);
 	}
+	
+
 }

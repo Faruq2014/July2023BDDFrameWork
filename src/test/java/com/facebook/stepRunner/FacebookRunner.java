@@ -18,7 +18,7 @@ import io.cucumber.junit.CucumberOptions.SnippetType;
 		features="src/test/resources/Features",
 				tags="@regression",
 		//glue= {"stepDefinations"},
-				glue="com.facebook.stepDefinations",
+		glue={"com.facebook.stepDefinations","com.facebook.hook"},
 		//dryRun=false,
 		monochrome = true
 		

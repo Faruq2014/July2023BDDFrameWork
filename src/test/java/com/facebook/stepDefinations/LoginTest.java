@@ -1,22 +1,20 @@
 package com.facebook.stepDefinations;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-
 import com.facebook.base.BaseTest;
 import com.facebook.pages.LoginPage;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LoginTest extends BaseTest{
+	
 	LoginPage loginPage;
 	
 	@Given("user open facebook home page")
 	public void user_open_facebook_home_page() {
 	 System.out.println("hello given"); 
 	 openApp();
+	 
 	}
 
 	@When("user enter userName and password")
@@ -25,16 +23,16 @@ public class LoginTest extends BaseTest{
 		loginPage = new LoginPage(driver);
 		loginPage.userName("Ayon");
 		loginPage.enterPassword("aoyeerr");
-		WebElement userName=driver.findElement(By.id("email"));
-		webElementScreenShot(userName,"user");
+		//WebElement userName=driver.findElement(By.id("email"));
+		//webElementScreenShot(userName,"user");
 	}
 
 	@Then("user succesfully logged in")
 	public void user_succesfully_logged_in() {
 		System.out.println("hello then"); 
 		loginPage.clickLoginButton();
-		screenShot("LoginTest");
-		closeApp();
+		//screenShot("LoginTest");
+	    closeApp();
 	}
 
 }

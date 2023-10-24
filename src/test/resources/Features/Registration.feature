@@ -22,7 +22,7 @@ Feature: Registration test
       | enterFirstName | enterLastName | enterEmail     | EnterYourPassword | enterYourBirthMonth | enterYourBirthDay | enterYourBirthYear | enterGender |
       | "Moumita"      | "Shen"        | "ms@ymail.com" | "shem$123"        | "Mar"                | "22"              | "2002"             | "female"         |
 
-
+   @second
   Scenario Outline: As a tester I open facebook registration page
     to build a dynamic registration test to input wrong test data
     so that user can not  be validated
@@ -43,4 +43,4 @@ Feature: Registration test
 
     Examples: 
       | enterFirstName | enterLastName | enterEmail     | EnterYourPassword | enterYourBirthMonth | enterYourBirthDay | enterYourBirthYear | enterGender |
-      | "Moumita"      | "Shen1"       | "ms@ymail.com" | "shem$123"        | "11"                | "22"              | "2002"             | "F"         |
+      | "Moumita"      | "Shen1"       | "ms@ymail.com" | "shem$123"        | "Nov"                | "22"              | "2002"             | "F"         |
